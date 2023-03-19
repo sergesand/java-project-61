@@ -1,4 +1,6 @@
-package hexlet.code;
+package hexlet.code.games;
+
+import hexlet.code.Cli;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -9,8 +11,8 @@ public class Even {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
-        String answer = "";
-        String expectedInput = "";
+        String answer;
+        String expectedInput;
 
         for (int i = 0; i < 3; i++) {
             System.out.println("Question: ");
