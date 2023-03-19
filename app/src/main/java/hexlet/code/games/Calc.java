@@ -1,5 +1,7 @@
 package hexlet.code.games;
 
+import hexlet.code.Cli;
+
 import java.util.Random;
 import java.util.Scanner;
 
@@ -37,6 +39,7 @@ public class Calc {
                 System.out.println("Let's try again, Sam!");
                 break;
             }
+            System.out.println("Congratulations, " + Cli.getName());
         }
 
 
