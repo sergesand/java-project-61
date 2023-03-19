@@ -1,5 +1,7 @@
 package hexlet.code.games;
 
+import hexlet.code.Cli;
+
 import java.util.Random;
 import java.util.Scanner;
 
@@ -34,9 +36,10 @@ public class Calc {
             } else {
                 System.out.println("'" + userResult + "'" + " is wrong answer ;(. Correct answer was "
                         + "'" + result + "'");
-                System.out.println("Let's try again, Sam!");
+                System.out.println("Let's try again, " + Cli.getName());
                 break;
             }
+            System.out.println("Congratulations, " + Cli.getName());
         }
 
 
