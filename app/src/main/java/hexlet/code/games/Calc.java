@@ -29,8 +29,13 @@ public class Calc {
             System.out.println("What is the result of the expression?");
             System.out.println("Question: " + firstOperand + " " + sign +  " " + secondOperand);
             System.out.println("Your answer: ");
-            userResult = Integer.parseInt(scanner.next());
-
+            try {
+                userResult = Integer.parseInt(scanner.next());
+            } catch (NumberFormatException e) {
+                System.out.println("Invalid input. Please enter an integer.");
+                break;
+                // Handle the error or prompt the user to enter a valid input again
+            }
             if (userResult == result) {
                 System.out.println("Correct!");
             } else {
