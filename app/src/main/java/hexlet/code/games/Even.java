@@ -6,7 +6,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Even {
-    public static void playEven() {
+    public static void playGame() {
         Random random = new Random();
         Scanner scanner = new Scanner(System.in);
 

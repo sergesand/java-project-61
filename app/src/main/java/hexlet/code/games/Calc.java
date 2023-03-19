@@ -6,7 +6,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Calc {
-    public static void playCalc() {
+    public static void playGame() {
         int firstOperand;
         int secondOperand;
         String sign;
@@ -40,15 +40,12 @@ public class Calc {
                 System.out.println("Correct!");
             } else {
                 System.out.println("'" + userResult + "'" + " is wrong answer ;(. Correct answer was "
-                        + "'" + result + "'");
-                System.out.println("Let's try again, " + Cli.getName());
-                break;
+                        + "'" + result + "'.");
+                System.out.println("Let's try again, " + Cli.getName() + "!");
+                return;
             }
-            System.out.println("Congratulations, " + Cli.getName());
         }
-
-
-
+        System.out.println("Congratulations, " + Cli.getName());
     }
 
     private static int getResult(int first, int second, String sign) {
