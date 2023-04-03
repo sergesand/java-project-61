@@ -15,10 +15,9 @@ public class Calc {
         Random rand = new Random();
         Scanner scanner = new Scanner(System.in);
 
-        //3 tries
-        int tries = 3; //3 tries
-        int maxBound = 20;
-        int numberOfsigns = 3;
+        final int tries = 3; //3 tries
+        final int maxBound = 20;
+        final int numberOfsigns = 3;
 
         for (int i = 0; i < tries; i++) {
             firstOperand = rand.nextInt(maxBound);
