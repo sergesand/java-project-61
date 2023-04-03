@@ -15,7 +15,7 @@ public class Prime {
             int number = random.nextInt(150);
             System.out.println("Question: " + number);
             System.out.println("Your answer: ");
-            String userInput = "";
+            String userInput;
             try {
                 userInput = scanner.nextLine();
             } catch (Exception e) {

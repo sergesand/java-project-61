@@ -15,7 +15,7 @@ public class Even {
         String expectedInput;
 
         for (int i = 0; i < 3; i++) {
-            System.out.println("Question: ");
+            System.out.print("Question: ");
             int number = random.nextInt();
 
             System.out.println(number);
