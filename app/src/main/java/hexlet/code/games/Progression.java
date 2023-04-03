@@ -38,7 +38,7 @@ public class Progression {
             } else {
                 System.out.println("'" + userInput + "'" + " is wrong answer ;(. Correct answer was '"
                         + arr[obfuscatedItem] + "'.");
-                System.out.println("Let's try again. " + Cli.getName() + "!");
+                System.out.println("Let's try again, " + Cli.getName() + "!");
                 return;
             }
         }
