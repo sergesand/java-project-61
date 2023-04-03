@@ -15,6 +15,7 @@ public class Calc {
         Random rand = new Random();
         Scanner scanner = new Scanner(System.in);
 
+        //3 tries
         int tries = 3; //3 tries
         int maxBound = 20;
         int numberOfsigns = 3;
