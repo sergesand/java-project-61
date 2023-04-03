@@ -47,7 +47,7 @@ public class Calc {
                 return;
             }
         }
-        System.out.println("Congratulations, " + Cli.getName());
+        System.out.println("Congratulations, " + Cli.getName() + "!");
     }
 
     private static int getResult(int first, int second, String sign) {
