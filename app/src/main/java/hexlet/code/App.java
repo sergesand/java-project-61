@@ -33,15 +33,19 @@ public class App {
             case "3":
                 Cli.askName();
                 Calc.playGame();
+                break;
             case "4":
                 Cli.askName();
                 GCD.playGame();
+                break;
             case "5":
                 Cli.askName();
                 Progression.playGame();
+                break;
             case "6":
                 Cli.askName();
                 Prime.playGame();
+                break;
             default:
                 break;
         }

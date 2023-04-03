@@ -16,8 +16,8 @@ public class Calc {
         Scanner scanner = new Scanner(System.in);
 
         for (int i = 0; i < 3; i++) {
-            firstOperand = rand.nextInt(101);
-            secondOperand = rand.nextInt(101);
+            firstOperand = rand.nextInt(20);
+            secondOperand = rand.nextInt(20);
 
             sign = switch (rand.nextInt(3)) {
                 case 0 -> "+";
@@ -29,6 +29,7 @@ public class Calc {
             System.out.println("What is the result of the expression?");
             System.out.println("Question: " + firstOperand + " " + sign +  " " + secondOperand);
             System.out.println("Your answer: ");
+
             try {
                 userResult = Integer.parseInt(scanner.next());
             } catch (NumberFormatException e) {
@@ -36,6 +37,7 @@ public class Calc {
                 break;
                 // Handle the error or prompt the user to enter a valid input again
             }
+
             if (userResult == result) {
                 System.out.println("Correct!");
             } else {
