@@ -3,6 +3,7 @@ package hexlet.code;
 import hexlet.code.games.Calc;
 import hexlet.code.games.Even;
 import hexlet.code.games.GCD;
+import hexlet.code.games.Prime;
 import hexlet.code.games.Progression;
 
 import java.util.Scanner;
@@ -15,6 +16,7 @@ public class App {
                 + "3 - Calc\n"
                 + "4 - GCD\n"
                 + "5 - Progression\n"
+                + "6 - Prime\n"
                 + "0 - Exit\n"
                 + "Your choice: ");
 
@@ -37,6 +39,9 @@ public class App {
             case "5":
                 Cli.askName();
                 Progression.playGame();
+            case "6":
+                Cli.askName();
+                Prime.playGame();
             default:
                 break;
         }

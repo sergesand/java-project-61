@@ -5,3 +5,4 @@ Even: [![asciicast](https://asciinema.org/a/h84JEDrz74AON4KkwzUzPHr2M.svg)](http
 Calc: [![asciicast](https://asciinema.org/a/rlCG7pPbXGvj8XvY2vMeMICLD.svg)](https://asciinema.org/a/rlCG7pPbXGvj8XvY2vMeMICLD)
 GCD: [![asciicast](https://asciinema.org/a/hfFBW9WfZST0xdOfcf06hTR7f.svg)](https://asciinema.org/a/hfFBW9WfZST0xdOfcf06hTR7f)
 Progression: [![asciicast](https://asciinema.org/a/agi2us7vhNM6cJ25gLTwvbDlW.svg)](https://asciinema.org/a/agi2us7vhNM6cJ25gLTwvbDlW)
+Prime: [![asciicast](https://asciinema.org/a/OGT2PILYZuRLmZCylXjR6mzWE.svg)](https://asciinema.org/a/OGT2PILYZuRLmZCylXjR6mzWE)

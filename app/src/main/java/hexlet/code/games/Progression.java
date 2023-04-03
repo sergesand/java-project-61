@@ -25,12 +25,14 @@ public class Progression {
 
             System.out.println("\nYour answer: ");
             int userInput;
+
             try {
                 userInput = Integer.parseInt(scanner.nextLine());
             } catch (NumberFormatException e) {
                 System.out.println("Invalid input. Please enter an integer.");
                 return;
             }
+
             if (userInput == arr[obfuscatedItem]) {
                 System.out.println("Correct!");
             } else {
@@ -40,6 +42,7 @@ public class Progression {
                 return;
             }
         }
+
         scanner.close();
         System.out.println("Congratulations, " + Cli.getName() + "!");
     }
@@ -49,8 +52,8 @@ public class Progression {
         int arrayLength = random.nextInt(5, 11);
         int firstItem = random.nextInt(21);
         int step = random.nextInt(1, 6);
-
         int[] array = new int[arrayLength];
+
         for (int i = 0; i < arrayLength; i++) {
             array[i] = firstItem + (step * i);
         }
