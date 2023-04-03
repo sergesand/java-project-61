@@ -13,11 +13,14 @@ public class GCD {
         int expectedResult;
         Scanner scan = new Scanner(System.in);
         int userInput;
-        for (int i = 0; i < 3; i++) {
+        int tries = 3;
+        int maxBound = 20;
+
+        for (int i = 0; i < tries; i++) {
             System.out.println("Find the greatest common divisor of given numbers.");
             System.out.print("Question: ");
-            first = Math.abs(rand.nextInt(101));
-            second = Math.abs(rand.nextInt(101));
+            first = Math.abs(rand.nextInt(maxBound));
+            second = Math.abs(rand.nextInt(maxBound));
             System.out.println(first + " " + second);
             expectedResult = getGCD(first, second);
 

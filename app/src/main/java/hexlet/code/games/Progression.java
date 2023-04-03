@@ -10,7 +10,9 @@ public class Progression {
         Scanner scanner = new Scanner(System.in);
         System.out.println("What number is missing in the progression?");
 
-        for (int i = 0; i < 3; i++) {
+        int tries = 3;
+
+        for (int i = 0; i < tries; i++) {
             System.out.print("Question: ");
             int[] arr = generateArray();
             int obfuscatedItem = random.nextInt(arr.length - 1);
@@ -49,9 +51,14 @@ public class Progression {
 
     private static int[] generateArray() {
         Random random = new Random();
-        int arrayLength = random.nextInt(5, 11);
-        int firstItem = random.nextInt(21);
-        int step = random.nextInt(1, 6);
+        int minBoundArray = 5;
+        int maxBoundArray = 11;
+        int maxBound = 21;
+        int maxBoundStep = 6;
+
+        int arrayLength = random.nextInt(minBoundArray, maxBoundArray);
+        int firstItem = random.nextInt(maxBound);
+        int step = random.nextInt(1, maxBoundStep);
         int[] array = new int[arrayLength];
 
         for (int i = 0; i < arrayLength; i++) {

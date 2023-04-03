@@ -14,16 +14,19 @@ public class Calc {
         int userResult;
         Random rand = new Random();
         Scanner scanner = new Scanner(System.in);
+        int tries = 3;
+        int maxBound = 20;
+        int numberOfsigns = 3;
 
-        for (int i = 0; i < 3; i++) {
-            firstOperand = rand.nextInt(20);
-            secondOperand = rand.nextInt(20);
+        for (int i = 0; i < tries; i++) {
+            firstOperand = rand.nextInt(maxBound);
+            secondOperand = rand.nextInt(maxBound);
 
-            sign = switch (rand.nextInt(3)) {
+            sign = switch (rand.nextInt(numberOfsigns)) {
                 case 0 -> "+";
                 case 1 -> "-";
                 case 2 -> "*";
-                default -> throw new IllegalStateException("Unexpected value: " + rand.nextInt(3));
+                default -> throw new IllegalStateException("Unexpected value: " + rand.nextInt(numberOfsigns));
             };
             result = getResult(firstOperand, secondOperand, sign);
             System.out.println("What is the result of the expression?");
