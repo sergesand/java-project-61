@@ -10,7 +10,7 @@ public class Progression {
         Scanner scanner = new Scanner(System.in);
         System.out.println("What number is missing in the progression?");
 
-        int tries = 3;
+        final int tries = 3;
 
         for (int i = 0; i < tries; i++) {
             System.out.print("Question: ");
@@ -51,10 +51,10 @@ public class Progression {
 
     private static int[] generateArray() {
         Random random = new Random();
-        int minBoundArray = 5;
-        int maxBoundArray = 11;
-        int maxBound = 21;
-        int maxBoundStep = 6;
+        final int minBoundArray = 5;
+        final int maxBoundArray = 11;
+        final int maxBound = 21;
+        final int maxBoundStep = 6;
 
         int arrayLength = random.nextInt(minBoundArray, maxBoundArray);
         int firstItem = random.nextInt(maxBound);

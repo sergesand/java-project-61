@@ -13,8 +13,8 @@ public class GCD {
         int expectedResult;
         Scanner scan = new Scanner(System.in);
         int userInput;
-        int tries = 3;
-        int maxBound = 20;
+        final int tries = 3;
+        final int maxBound = 20;
 
         for (int i = 0; i < tries; i++) {
             System.out.println("Find the greatest common divisor of given numbers.");

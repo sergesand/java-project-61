@@ -13,7 +13,7 @@ public class Even {
         System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
         String answer;
         String expectedInput;
-        int tries = 3;
+        final int tries = 3;
 
         for (int i = 0; i < tries; i++) {
             System.out.print("Question: ");
