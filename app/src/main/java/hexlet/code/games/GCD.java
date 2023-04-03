@@ -35,7 +35,7 @@ public class GCD {
             } else {
                 System.out.println("'" + userInput + "'" + " is wrong answer ;(. Correct answer was '"
                         + expectedResult + "'.");
-                System.out.println("Let's try again. " + Cli.getName() + "!");
+                System.out.println("Let's try again, " + Cli.getName() + "!");
                 return;
             }
         }
